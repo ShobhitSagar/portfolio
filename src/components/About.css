@@ -1,0 +1,26 @@
+.about-div {
+	height: 55vh;
+	width: 100%;
+
+	background-color: rgb(238, 238, 238);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	-moz-box-shadow: inset 0px 18px 8px -10px #ccc, inset 0px -18px 8px -10px #ccc;
+	-webkit-box-shadow: inset 0px 18px 8px -10px #ccc,
+		inset 0px -18px 8px -10px #ccc;
+	box-shadow: inset 0px 18px 8px -10px #ccc, inset 0px -18px 8px -10px #ccc;
+}
+
+.about-div > div {
+	width: 60%;
+}
+
+@media only screen and (max-width: 580px) {
+	.about-div > div > p {
+		font-size: 16px;
+	}
+}

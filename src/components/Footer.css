@@ -1,0 +1,42 @@
+footer {
+	background-color: #121212;
+	color: white;
+	height: auto;
+
+	padding: 50px 0;
+}
+
+.col-sm-4 > a {
+	color: white;
+	font-size: 30px;
+	margin: 10px 20px;
+	text-decoration: none;
+
+	transition: transform 0.2s;
+}
+
+.col-sm-4 > a:hover {
+	transform: scale(1.03);
+	color: #ccc;
+}
+
+/* .footer-div > div:nth-child(1) {
+	height: 40px;
+	width: 200px;
+
+	background-image: linear-gradient(to right, #ff4b1f, #ff9068);
+}
+
+.footer-div > div:nth-child(2) {
+	height: 40px;
+	width: 100px;
+
+	background-image: linear-gradient(to right, #ff4b1f, #ff9068);
+}
+
+.footer-div > div:nth-child(3) {
+	height: 40px;
+	width: 300px;
+
+	background-image: linear-gradient(to right, #ff4b1f, #ff9068);
+} */

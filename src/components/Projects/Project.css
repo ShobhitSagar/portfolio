@@ -1,0 +1,24 @@
+.proj-div {
+	height: 160px;
+	width: 250px;
+
+	margin: 16px;
+	background-image: linear-gradient(to right bottom, #ff5f6d, #ffc371);
+	border-radius: 0.2rem;
+
+	transition: transform 0.3s;
+}
+
+.proj-div:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+
+	box-shadow: 0 0 16px #ccc;
+}
+
+.proj-div > img {
+	height: 150px;
+	width: 160px;
+
+	border-radius: 0.2rem 0.2rem 0 0;
+}

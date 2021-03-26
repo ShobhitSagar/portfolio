@@ -1,0 +1,54 @@
+.contact-div {
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	/* background-color: #357a38; */
+	background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+	color: white;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 40%;
+}
+
+input[type='text'],
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 0.2rem;
+
+	outline: none;
+
+	transition: transform 0.3s;
+}
+
+input[type='text']:focus,
+textarea:focus {
+	transform: scale(1.02);
+}
+
+form > button {
+	width: 100%;
+	padding: 10px 0;
+	margin-top: 5px;
+}
+
+@media only screen and (max-width: 790px) {
+	form {
+		width: 80%;
+	}
+}

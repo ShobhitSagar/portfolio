@@ -1,0 +1,68 @@
+.me-div {
+	height: 100vh;
+	display: flex;
+
+	color: white;
+	background-image: linear-gradient(to right, #0052d4, #65c7f7, #9cecfb);
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	/* flex-flow: row wrap; */
+}
+
+.me-div > section {
+	text-align: left;
+}
+
+.hi {
+	display: flex;
+}
+
+.hi > div > span {
+	font-size: 66px;
+}
+
+.me-div > section > span {
+	font-size: 30px;
+	/* display: inline-block; */
+}
+
+/* .shadow > img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-image: url('my_image.jpeg');
+} */
+
+.shadow {
+	width: 400px;
+	height: 400px;
+
+	border-radius: 50%;
+	background-image: url('my_image.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	-moz-box-shadow: inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+@media only screen and (max-width: 790px) {
+	.me-div {
+		background-image: linear-gradient(to bottom, #0052d4, #65c7f7, #9cecfb);
+
+		flex-direction: column-reverse;
+	}
+	.shadow {
+		width: 260px;
+		height: 260px;
+		margin-top: 60px;
+	}
+
+	.me-div > section > span {
+		font-size: 25px;
+	}
+}

@@ -9,6 +9,9 @@
 
 	/* background-color: #357a38; */
 	background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.contact-div > h1 {
 	color: white;
 }
 

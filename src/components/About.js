@@ -1,9 +1,9 @@
 import React from 'react'
-import './About.css'
+import '../assets/styles/About.css'
 
 function About() {
 	return (
-		<div className="about-div">
+		<div id='about-div' className='about-div'>
 			<h1>About</h1>
 			<div
 				style={{ width: '40px', height: '1px', backgroundColor: '#000' }}

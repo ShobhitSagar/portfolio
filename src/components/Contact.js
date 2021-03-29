@@ -1,5 +1,5 @@
 import React from 'react'
-import './Contact.css'
+import '../assets/styles/Contact.css'
 
 function Contact() {
 	const handleSubmit = (e) => {
@@ -7,17 +7,17 @@ function Contact() {
 		console.log('Message')
 	}
 	return (
-		<div className="contact-div">
+		<div id='contact-div' className='contact-div'>
 			<h1>Contact</h1>
 
 			<form onSubmit={handleSubmit}>
-				<input type="text" placeholder="Email" />
-				<input type="text" placeholder="Subject" />
+				<input type='text' placeholder='Email' />
+				<input type='text' placeholder='Subject' />
 				<textarea
-					name="msg"
+					name='msg'
 					// cols="30"
-					rows="10"
-					placeholder="Message"
+					rows='10'
+					placeholder='Message'
 				></textarea>
 				<button style={{ color: 'black' }}>Send</button>
 			</form>

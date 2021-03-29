@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Project from './Project'
+import uuid from 'react-uuid'
 
 function Projets() {
 	const [projects, setProjects] = useState([
@@ -46,11 +47,11 @@ function Projets() {
 	])
 
 	return (
-		<div style={projectsStyle}>
+		<div id='projects-div' style={projectsStyle}>
 			<h1 style={title}>Projects</h1>
 			<div style={projList}>
 				{projects.map((proj) => (
-					<Project proj={proj} />
+					<Project key={uuid()} proj={proj} />
 				))}
 			</div>
 		</div>

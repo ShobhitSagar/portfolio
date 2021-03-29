@@ -1,0 +1,99 @@
+nav {
+	width: 100%;
+	height: auto;
+	padding: 26px 56px;
+
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	z-index: 4;
+}
+
+/* .nav-div {
+	width: 80%;
+	height: auto;
+	padding: 26px 0;
+
+	color: white;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} */
+
+.left-nav-div {
+	/* margin: 0 26px; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-nav-div > button {
+	display: none;
+	color: white;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.left-nav-div > img {
+	width: 40px;
+	height: 40px;
+}
+
+/* .nav-div > strong {
+	font-size: 26px;
+}
+
+.nav-div > strong:hover {
+	cursor: pointer;
+} */
+
+.link-section > a {
+	margin: 5px;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+	behavior: smooth;
+
+	padding: 5px 10px;
+
+	border: 1px solid #fff;
+	border-radius: 0.2rem;
+}
+
+.link-section > a:hover {
+	cursor: pointer;
+	background-color: white;
+	color: #9aebfb;
+}
+
+@media only screen and (max-width: 620px) {
+	nav {
+		background-color: #121212;
+		padding: 26px 26px;
+		position: fixed;
+		flex-direction: column;
+	}
+
+	.left-nav-div > button {
+		display: block;
+	}
+
+	.link-section {
+		/* height: 100vh; */
+		padding: 30px 20px;
+		display: none;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+
+	.link-section > a {
+		padding: 10px 10px;
+		/* border: 0; */
+	}
+
+	.link-section > a:hover {
+		color: black;
+	}
+}

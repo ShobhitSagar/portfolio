@@ -26,7 +26,11 @@ function Footer() {
 						target='_blank'
 						className='fa fa-twitter'
 					></a>
-					<a href='#' target='_blank' className='fa fa-google'></a>
+					<a
+						href='https://www.instagram.com/sudo_codes.ig/'
+						target='_blank'
+						className='fa fa-instagram'
+					></a>
 					<a
 						href='https://www.linkedin.com/in/shobhit-sagar-50765414b/'
 						target='_blank'

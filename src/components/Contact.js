@@ -1,20 +1,39 @@
 import React from 'react'
+import emailjs from 'emailjs-com'
 import '../assets/styles/Contact.css'
 
 function Contact() {
-	const handleSubmit = (e) => {
+	function sendEmail(e) {
 		e.preventDefault()
-		console.log('Message')
+
+		emailjs
+			.sendForm(
+				'gmail_devss',
+				'emailjs_gmail_template',
+				e.target,
+				'user_ivxeQpuPYHryzeUITadwL'
+			)
+			.then(
+				(result) => {
+					console.log(result.text)
+				},
+				(error) => {
+					console.log(error.text)
+				}
+			)
+		e.target.reset()
 	}
+
 	return (
 		<div id='contact-div' className='contact-div'>
 			<h1>Contact</h1>
 
-			<form onSubmit={handleSubmit}>
-				<input type='text' placeholder='Email' />
-				<input type='text' placeholder='Subject' />
+			<form onSubmit={sendEmail}>
+				<input type='text' placeholder='Full Name' name='from_name' />
+				<input type='text' placeholder='Email' name='email' />
+				<input type='text' placeholder='Subject' name='subject' />
 				<textarea
-					name='msg'
+					name='message'
 					// cols="30"
 					rows='10'
 					placeholder='Message'

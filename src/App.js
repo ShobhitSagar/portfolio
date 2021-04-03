@@ -1,4 +1,5 @@
 import './App.css'
+import ScrollUpButton from 'react-scroll-up-button'
 import AppState from './StateManagement/AppState'
 import Alert from './components/Alert'
 import Navbar from './components/Navbar'
@@ -12,6 +13,7 @@ function App() {
 	return (
 		<div className='App'>
 			<AppState>
+				<ScrollUpButton />
 				<Alert />
 				<Navbar />
 				<Me />

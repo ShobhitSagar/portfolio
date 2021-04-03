@@ -13,7 +13,7 @@ function App() {
 	return (
 		<div className='App'>
 			<AppState>
-				<ScrollUpButton />
+				<ScrollUpButton style={{ outline: 'none' }} />
 				<Alert />
 				<Navbar />
 				<Me />

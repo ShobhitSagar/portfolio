@@ -9,20 +9,7 @@ nav {
 	z-index: 4;
 }
 
-/* .nav-div {
-	width: 80%;
-	height: auto;
-	padding: 26px 0;
-
-	color: white;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-} */
-
 .left-nav-div {
-	/* margin: 0 26px; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -41,13 +28,9 @@ nav {
 	height: 40px;
 }
 
-/* .nav-div > strong {
-	font-size: 26px;
+.link-section {
+	display: flex;
 }
-
-.nav-div > strong:hover {
-	cursor: pointer;
-} */
 
 .link-section > a {
 	margin: 5px;

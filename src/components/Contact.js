@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import AppContext from '../StateManagement/AppContext'
 import emailjs from 'emailjs-com'
 import '../assets/styles/Contact.css'
 
 function Contact() {
+	const [setMyAlert] = useContext(AppContext)
+
+	function showAlert() {
+		setMyAlert('block')
+		setTimeout(() => {
+			setMyAlert('none')
+		}, 1300)
+	}
+
 	function sendEmail(e) {
 		e.preventDefault()
 
@@ -15,10 +25,10 @@ function Contact() {
 			)
 			.then(
 				(result) => {
-					console.log(result.text)
+					showAlert()
 				},
 				(error) => {
-					console.log(error.text)
+					alert('Mail not Sent!')
 				}
 			)
 		e.target.reset()
@@ -30,13 +40,14 @@ function Contact() {
 
 			<form onSubmit={sendEmail}>
 				<input type='text' placeholder='Full Name' name='from_name' />
-				<input type='text' placeholder='Email' name='email' />
+				<input type='text' placeholder='Email*' name='email' required />
 				<input type='text' placeholder='Subject' name='subject' />
 				<textarea
 					name='message'
 					// cols="30"
 					rows='10'
-					placeholder='Message'
+					placeholder='Message*'
+					required
 				></textarea>
 				<button style={{ color: 'black' }}>Send</button>
 			</form>

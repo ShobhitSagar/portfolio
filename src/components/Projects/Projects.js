@@ -3,46 +3,88 @@ import Project from './Project'
 import uuid from 'react-uuid'
 
 function Projets() {
-	const [projects, setProjects] = useState([
+	const [projects] = useState([
 		{
-			id: '1',
-			title: 'Demo Project 1',
-			desc: 'This is a demo project 1. I created this on 15th feb 20202.',
+			title: 'Vehicle Dealer Record',
+			desc:
+				'Android app for Two-wheeler dealers. It keep records of all the vehicles purchased and sold.',
+			link: 'https://github.com/ShobhitSagar/VehicleSellPurchase',
 		},
 		{
-			id: '2',
-			title: 'Demo Project 2',
-			desc: 'This is a demo project 2. I created this on 15th feb 20202.',
+			title: 'Android Keyboard',
+			desc: 'A basic Android keyboard.',
+			link: 'https://github.com/ShobhitSagar/Simple-Keybard',
 		},
 		{
-			id: '2',
-			title: 'Demo Project 2',
-			desc: 'This is a demo project 2. I created this on 15th feb 20202.',
+			title: 'Todo React App',
+			desc:
+				'A todo app. Create, delete, mark completed/not completed and create different Lists.',
+			link: 'https://github.com/ShobhitSagar/To-Do-React-App',
 		},
 		{
-			id: '2',
-			title: 'Demo Project 2',
-			desc: 'This is a demo project 2. I created this on 15th feb 20202.',
+			title: 'Popular Movie App',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/TMDB-App',
 		},
 		{
-			id: '2',
-			title: 'Demo Project 2',
-			desc: 'This is a demo project 2. I created this on 15th feb 20202.',
+			title: 'Meme Generator',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/Meme-Generator-FCC',
 		},
 		{
-			id: '2',
-			title: 'Demo Project 2',
-			desc: 'This is a demo project 2. I created this on 15th feb 20202.',
+			title: 'Quiz App',
+			desc: 'A quiz android app.',
+			link: 'https://github.com/ShobhitSagar/Quiz',
 		},
 		{
-			id: '2',
-			title: 'Demo Project 2',
-			desc: 'This is a demo project 2. I created this on 15th feb 20202.',
+			title: 'Wave',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/Wave',
 		},
 		{
-			id: '2',
-			title: 'Demo Project 2',
-			desc: 'This is a demo project 2. I created this on 15th feb 20202.',
+			title: 'Vehicle Shop',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/TranspotWeb',
+		},
+		{
+			title: 'Friendly Chat App',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/FriendlyChat',
+		},
+		{
+			title: 'My College App',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/MyCollege',
+		},
+		{
+			title: 'Car Pool Website',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/Car-Pool-Website',
+		},
+		{
+			title: 'Bootstrap Website',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/ShobhitSagar.github.io',
+		},
+		{
+			title: 'Spin App',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/Spin',
+		},
+		{
+			title: 'Wallpaper App',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/WallsS',
+		},
+		{
+			title: 'Destiny App',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/Destiny',
+		},
+		{
+			title: 'FB Realtime Database',
+			desc: 'This is a demo project 2. I created this on 15th feb 2020.',
+			link: 'https://github.com/ShobhitSagar/FirebaseTest',
 		},
 	])
 

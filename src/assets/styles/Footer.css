@@ -7,7 +7,7 @@ footer {
 }
 
 .col-sm-4 > a {
-	color: white;
+	color: rgba(232, 230, 227, 0.5);
 	font-size: 30px;
 	margin: 10px 20px;
 	text-decoration: none;
@@ -17,7 +17,7 @@ footer {
 
 .col-sm-4 > a:hover {
 	transform: scale(1.03);
-	color: #ccc;
+	color: white;
 }
 
 /* .footer-div > div:nth-child(1) {

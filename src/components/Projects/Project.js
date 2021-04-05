@@ -1,14 +1,17 @@
 import React from 'react'
 import '../../assets/styles/Project.css'
-import my_img from '../my_image.jpeg'
 
 function Project({ proj }) {
 	return (
-		<div className='proj-div'>
-			{/* <img src={my_img} alt="" />
-			<span>{proj.title}</span>
-			<br />
-			<small>{proj.desc}</small> */}
+		<div class='proj-div'>
+			<h5 class=''>{proj.title}</h5>
+			<section>
+				<hr />
+				<p>{proj.desc}</p>
+				<a target='_blank' href={proj.link}>
+					View Project
+				</a>
+			</section>
 		</div>
 	)
 }

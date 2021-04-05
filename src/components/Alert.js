@@ -4,7 +4,7 @@ import '../assets/styles/Alert.css'
 
 // animate__slideOutUp
 function Alert(msg) {
-	const [myAlert, setMyAlert] = useContext(AppContext)
+	const [myAlert] = useContext(AppContext)
 
 	return (
 		<div className='alert-div'>
